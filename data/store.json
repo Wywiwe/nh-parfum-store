@@ -9,20 +9,20 @@
     "adminLabel": "Admin"
   },
   "hero": {
-    "eyebrow": "NH Parfum Store",
-    "title": "Katalog parfum yang tampil lebih meyakinkan.",
-    "desc": "Desain dibuat seperti toko online mobile: lebih rapi, premium, dan gampang dipakai pelanggan untuk pilih produk lalu checkout langsung ke WhatsApp.",
-    "primaryText": "Lihat Produk",
     "secondaryText": "Cara Order",
+    "bannerImages": [],
+    "bannerSubtitle": "Royal Ice • Clouds • Yellow • Moroccan Sunset",
+    "eyebrow": "NH Parfum Store",
+    "bannerTitle": "Premium Refill & Custom Aroma",
+    "primaryText": "Lihat Produk",
+    "desc": "Desain dibuat seperti toko online mobile: lebih rapi, premium, dan gampang dipakai pelanggan untuk pilih produk lalu checkout langsung ke WhatsApp.",
     "bullets": [
       "Katalog rapi & profesional",
       "Pilihan ukuran 15ml, 20ml, 30ml",
       "Langsung order via WhatsApp"
     ],
-    "bannerTitle": "Premium Refill & Custom Aroma",
-    "bannerSubtitle": "Royal Ice • Clouds • Yellow • Moroccan Sunset",
-    "bannerPrice": "Mulai 25K",
-    "bannerImages": []
+    "title": "Katalog parfum yang tampil lebih meyakinkan.",
+    "bannerPrice": "Mulai 25K"
   },
   "productSection": {
     "kicker": "Produk pilihan",
@@ -64,14 +64,39 @@
   ],
   "products": [
     {
-      "id": "royal-ice",
-      "name": "Royal Ice",
-      "badge": "Best Seller",
       "notes": "Fresh · Floral · Musky",
-      "desc": "Fresh clean, soft floral, dan musky halus. Cocok buat harian yang rapi.",
+      "badge": "Best Seller",
+      "prices": {
+        "Standar": {
+          "15ml": 15000,
+          "20ml": 20000,
+          "30ml": 25000
+        },
+        "Best": {
+          "15ml": 20000,
+          "20ml": 27000,
+          "30ml": 35000
+        },
+        "Premium": {
+          "15ml": 30000,
+          "20ml": 40000,
+          "30ml": 50000
+        }
+      },
+      "name": "Royal Ice",
       "toneA": "#91d1d5",
       "toneB": "#184850",
-      "images": [],
+      "desc": "Fresh clean, soft floral, dan musky halus. Cocok buat harian yang rapi.",
+      "images": [
+        {
+          "src": "/assets/uploads/file_0000000088047207b2cb9c54dcbbec37.png"
+        }
+      ],
+      "id": "royal-ice"
+    },
+    {
+      "notes": "Fruity · Sweet · Creamy",
+      "badge": "Soft Sweet",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -88,17 +113,17 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
-    },
-    {
-      "id": "clouds",
+      },
       "name": "Clouds",
-      "badge": "Soft Sweet",
-      "notes": "Fruity · Sweet · Creamy",
-      "desc": "Manis lembut, creamy, dan enak dipakai buat yang suka aroma playful tapi tetap clean.",
       "toneA": "#edc6d7",
       "toneB": "#7f4460",
+      "desc": "Manis lembut, creamy, dan enak dipakai buat yang suka aroma playful tapi tetap clean.",
       "images": [],
+      "id": "clouds"
+    },
+    {
+      "notes": "Fruity · Fresh · Airy",
+      "badge": "Bright",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -115,17 +140,17 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
-    },
-    {
-      "id": "yellow",
+      },
       "name": "Yellow",
-      "badge": "Bright",
-      "notes": "Fruity · Fresh · Airy",
-      "desc": "Aroma fruity cerah, ringan, dan fresh. Cocok buat siang hari dan aktivitas outdoor.",
       "toneA": "#f2cf7c",
       "toneB": "#9c5d11",
+      "desc": "Aroma fruity cerah, ringan, dan fresh. Cocok buat siang hari dan aktivitas outdoor.",
       "images": [],
+      "id": "yellow"
+    },
+    {
+      "notes": "Vanilla · Fresh · Creamy",
+      "badge": "New Arrival",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -142,17 +167,17 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
-    },
-    {
-      "id": "scndl-v-ice",
+      },
       "name": "SCNDL V Ice",
-      "badge": "New Arrival",
-      "notes": "Vanilla · Fresh · Creamy",
-      "desc": "Vanilla creamy yang dibikin lebih adem. Manis tapi masih nyaman dipakai harian.",
       "toneA": "#ddd4bd",
       "toneB": "#5c725f",
+      "desc": "Vanilla creamy yang dibikin lebih adem. Manis tapi masih nyaman dipakai harian.",
       "images": [],
+      "id": "scndl-v-ice"
+    },
+    {
+      "notes": "Green Tea · Clean · Soft",
+      "badge": "Clean",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -169,17 +194,17 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
-    },
-    {
-      "id": "kiss-gtea",
+      },
       "name": "KISS G.TEA",
-      "badge": "Clean",
-      "notes": "Green Tea · Clean · Soft",
-      "desc": "Fresh green tea yang adem, bersih, dan kalem. Aman buat sekolah, kerja, atau ngantor.",
       "toneA": "#b4d5a7",
       "toneB": "#2d664a",
+      "desc": "Fresh green tea yang adem, bersih, dan kalem. Aman buat sekolah, kerja, atau ngantor.",
       "images": [],
+      "id": "kiss-gtea"
+    },
+    {
+      "notes": "Aquatic · Fresh · Masculine",
+      "badge": "Men Fresh",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -196,17 +221,17 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
-    },
-    {
-      "id": "scndl-dblue",
+      },
       "name": "SCNDL D.Blue",
-      "badge": "Men Fresh",
-      "notes": "Aquatic · Fresh · Masculine",
-      "desc": "Segar aquatic maskulin, cocok buat cowok yang mau wangi bersih dan aktif.",
       "toneA": "#76a6d3",
       "toneB": "#12385d",
+      "desc": "Segar aquatic maskulin, cocok buat cowok yang mau wangi bersih dan aktif.",
       "images": [],
+      "id": "scndl-dblue"
+    },
+    {
+      "notes": "Sweet · Spicy · Warm",
+      "badge": "Night Out",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -223,44 +248,17 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
-    },
-    {
-      "id": "moroccan-sunset",
+      },
       "name": "Moroccan Sunset",
-      "badge": "Night Out",
-      "notes": "Sweet · Spicy · Warm",
-      "desc": "Manis spicy yang bold, hangat, dan cocok buat malam atau acara spesial.",
       "toneA": "#f2a06f",
       "toneB": "#7b2f2f",
+      "desc": "Manis spicy yang bold, hangat, dan cocok buat malam atau acara spesial.",
       "images": [],
-      "prices": {
-        "Standar": {
-          "15ml": 15000,
-          "20ml": 20000,
-          "30ml": 25000
-        },
-        "Best": {
-          "15ml": 20000,
-          "20ml": 27000,
-          "30ml": 35000
-        },
-        "Premium": {
-          "15ml": 30000,
-          "20ml": 40000,
-          "30ml": 50000
-        }
-      }
+      "id": "moroccan-sunset"
     },
     {
-      "id": "moscow-ice",
-      "name": "Moscow Ice",
-      "badge": "Cool Fresh",
       "notes": "Ice · Aquatic · Modern",
-      "desc": "Fresh aquatic dingin dengan vibe modern. Cocok buat yang suka aroma clean dan sporty.",
-      "toneA": "#7ed0cc",
-      "toneB": "#17575c",
-      "images": [],
+      "badge": "Cool Fresh",
       "prices": {
         "Standar": {
           "15ml": 15000,
@@ -277,7 +275,22 @@
           "20ml": 40000,
           "30ml": 50000
         }
-      }
+      },
+      "name": "Moscow Ice",
+      "toneA": "#7ed0cc",
+      "toneB": "#17575c",
+      "desc": "Fresh aquatic dingin dengan vibe modern. Cocok buat yang suka aroma clean dan sporty.",
+      "images": [],
+      "id": "moscow-ice"
+    },
+    {
+      "toneA": "#91d1d5",
+      "toneB": "#184850",
+      "images": [
+        {
+          "src": "assets/uploads/file_0000000088047207b2cb9c54dcbbec37.png"
+        }
+      ]
     }
   ]
 }
