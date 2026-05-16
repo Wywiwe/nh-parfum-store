@@ -1,0 +1,150 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "produk"
+    label: "1. Produk"
+    files:
+      - name: "kelola_produk"
+        label: "Tambah / Edit / Hapus Produk"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Panduan singkat"
+            name: "adminHelp"
+            widget: "hidden"
+            required: false
+            default: "Klik Add product untuk tambah produk. Klik item produk untuk edit. Klik ikon tong sampah untuk hapus. Setelah selesai klik Save / Publish."
+          - label: "Daftar Produk"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.badge}}"
+            hint: "ALUR: 1) Add product untuk produk baru. 2) Isi nama, upload gambar maksimal 5, isi variasi + harga. 3) Save/Publish. 4) Tunggu Netlify redeploy 1-3 menit. Untuk hapus produk, buka item lalu klik ikon tong sampah/remove."
+            add_to_top: true
+            collapsed: true
+            minimize_collapsed: true
+            fields:
+              - { label: "Tampilkan produk?", name: "published", widget: "boolean", default: true, hint: "Matikan kalau produk mau disembunyikan tanpa dihapus." }
+              - { label: "ID unik / slug", name: "id", widget: "string", hint: "Wajib unik. Contoh: royal-ice, scandal-v-ice. Pakai huruf kecil dan tanda minus." }
+              - { label: "Nama produk", name: "name", widget: "string" }
+              - { label: "SKU utama", name: "sku", widget: "string", required: false, hint: "Opsional. Contoh: NH-RI" }
+              - { label: "Kategori", name: "category", widget: "string", required: false, hint: "Contoh: Fresh, Sweet Creamy, Masculine, Unisex" }
+              - { label: "Badge", name: "badge", widget: "string", required: false, hint: "Contoh: Best Seller, New, Promo" }
+              - { label: "Notes aroma", name: "notes", widget: "string", required: false, hint: "Contoh: Fresh · Floral · Musky" }
+              - { label: "Deskripsi produk", name: "desc", widget: "text" }
+              - { label: "Warna kartu 1", name: "toneA", widget: "string", default: "#91d1d5", hint: "Kode HEX. Contoh: #91d1d5" }
+              - { label: "Warna kartu 2", name: "toneB", widget: "string", default: "#184850", hint: "Kode HEX. Contoh: #184850" }
+              - label: "Gambar Produk"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.caption}}"
+                hint: "Maksimal 5 gambar. Ideal 1080×1080 px / rasio 1:1. Website menampilkan gambar utuh, tidak dipotong. Gambar pertama akan tampil paling depan."
+                max: 5
+                collapsed: true
+                minimize_collapsed: true
+                fields:
+                  - { label: "Upload gambar", name: "src", widget: "image", media_folder: "/assets/uploads/products", public_folder: "/assets/uploads/products" }
+                  - { label: "Caption / alt text", name: "caption", widget: "string", required: false }
+              - label: "Variasi & Harga"
+                name: "variations"
+                widget: "list"
+                summary: "{{fields.name}}"
+                hint: "Contoh variasi: Standar, Best, Premium. Bisa juga: 15ml, 30ml, Paket Bundling, Aroma, dll. Di dalam tiap variasi, tambahkan opsi harga."
+                add_to_top: false
+                min: 1
+                collapsed: true
+                minimize_collapsed: true
+                fields:
+                  - { label: "Nama variasi", name: "name", widget: "string", hint: "Contoh: Standar / Best / Premium" }
+                  - label: "Opsi dalam variasi"
+                    name: "options"
+                    widget: "list"
+                    summary: "{{fields.label}} — Rp{{fields.price}} — {{fields.stock}}"
+                    hint: "Contoh opsi: 15ml, 20ml, 30ml. Harga diisi angka saja, tanpa titik/koma."
+                    min: 1
+                    collapsed: true
+                    minimize_collapsed: true
+                    fields:
+                      - { label: "Nama opsi", name: "label", widget: "string", hint: "Contoh: 15ml / 20ml / 30ml / 2 Botol" }
+                      - { label: "Harga jual", name: "price", widget: "number", value_type: "int", min: 0, hint: "Isi angka saja. Contoh: 35000" }
+                      - { label: "Harga coret", name: "oldPrice", widget: "number", value_type: "int", min: 0, required: false, default: 0, hint: "Opsional. Isi 0 kalau tidak dipakai." }
+                      - label: "Status stok"
+                        name: "stock"
+                        widget: "select"
+                        default: "Ready"
+                        options: ["Ready", "Preorder", "Kosong"]
+                      - { label: "SKU opsi", name: "sku", widget: "string", required: false, hint: "Opsional. Contoh: NH-RI-PRM-30" }
+
+  - name: "website"
+    label: "2. Tampilan Website"
+    files:
+      - name: "pengaturan"
+        label: "Profil, Banner, Section"
+        file: "data/settings.json"
+        format: "json"
+        fields:
+          - label: "Profil Toko"
+            name: "profile"
+            widget: "object"
+            fields:
+              - { label: "Nama toko", name: "storeName", widget: "string" }
+              - { label: "Logo text / inisial", name: "logoText", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Nomor WhatsApp", name: "waNumber", widget: "string", hint: "Pakai format 62. Contoh: 6281234567890" }
+              - { label: "Deskripsi footer", name: "footerDesc", widget: "text" }
+              - { label: "Pesan cepat WhatsApp", name: "quickMessage", widget: "text" }
+              - { label: "Label admin", name: "adminLabel", widget: "string", required: false }
+          - label: "Hero & Banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow kecil", name: "eyebrow", widget: "string" }
+              - { label: "Judul besar", name: "title", widget: "text" }
+              - { label: "Deskripsi", name: "desc", widget: "text" }
+              - { label: "Tombol utama", name: "primaryText", widget: "string" }
+              - { label: "Tombol kedua", name: "secondaryText", widget: "string" }
+              - label: "Bullet hero"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Teks bullet", name: "item", widget: "string" }
+              - { label: "Judul banner", name: "bannerTitle", widget: "string" }
+              - { label: "Subtitle banner", name: "bannerSubtitle", widget: "string" }
+              - { label: "Pill harga banner", name: "bannerPrice", widget: "string" }
+              - label: "Gambar banner"
+                name: "bannerImages"
+                widget: "list"
+                summary: "{{fields.caption}}"
+                hint: "Maksimal 5 banner. Ideal 1600×900 px, rasio 16:9. Website menampilkan gambar utuh, tidak dipotong."
+                max: 5
+                collapsed: true
+                minimize_collapsed: true
+                fields:
+                  - { label: "Upload gambar", name: "src", widget: "image", media_folder: "/assets/uploads/banners", public_folder: "/assets/uploads/banners" }
+                  - { label: "Caption / Alt text", name: "caption", widget: "string", required: false }
+          - label: "Section Produk"
+            name: "productSection"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "desc", widget: "text" }
+              - { label: "Chip kanan", name: "chip", widget: "string" }
+          - label: "Kartu Kenapa NH"
+            name: "trustCards"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Isi", name: "text", widget: "text" }
+          - label: "Cara Order"
+            name: "orderCards"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Isi", name: "text", widget: "text" }
