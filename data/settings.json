@@ -1,0 +1,65 @@
+{
+  "profile": {
+    "storeName": "NH Parfum Store",
+    "logoText": "NH",
+    "tagline": "Katalog parfum premium • checkout WhatsApp",
+    "waNumber": "6281234567890",
+    "footerDesc": "Katalog parfum premium untuk order via WhatsApp.",
+    "quickMessage": "Halo NH Parfum Store, saya mau tanya katalog parfum.",
+    "adminLabel": "Admin"
+  },
+  "hero": {
+    "eyebrow": "NH Parfum Store",
+    "title": "Katalog parfum yang tampil lebih meyakinkan.",
+    "desc": "Desain dibuat seperti toko online mobile: lebih rapi, premium, dan gampang dipakai pelanggan untuk pilih produk lalu checkout langsung ke WhatsApp.",
+    "primaryText": "Lihat Produk",
+    "secondaryText": "Cara Order",
+    "bullets": [
+      "Katalog rapi & profesional",
+      "Pilihan ukuran 15ml, 20ml, 30ml",
+      "Langsung order via WhatsApp"
+    ],
+    "bannerTitle": "Premium Refill & Custom Aroma",
+    "bannerSubtitle": "Royal Ice • Clouds • Yellow • Moroccan Sunset",
+    "bannerPrice": "Mulai 25K",
+    "bannerImages": []
+  },
+  "productSection": {
+    "kicker": "Produk pilihan",
+    "title": "Pilih produk berdasarkan nama.",
+    "desc": "Produk bisa ditambah, diedit, atau dihapus dari admin. Tiap produk mendukung maksimal 5 gambar, variasi, ukuran, harga, dan status stok.",
+    "chip": "🛍️ Admin produk seperti e-commerce"
+  },
+  "trustCards": [
+    {
+      "title": "Konsultasi aroma",
+      "text": "Pelanggan bisa pilih aroma yang paling cocok sebelum order."
+    },
+    {
+      "title": "Pilihan variasi",
+      "text": "Admin bisa atur kualitas, ukuran, harga, SKU, dan status stok."
+    },
+    {
+      "title": "Order cepat",
+      "text": "Keranjang ringan dan checkout langsung ke WhatsApp admin."
+    },
+    {
+      "title": "Tampilan lebih trust",
+      "text": "Warna premium, layout rapi, dan fokus ke konversi."
+    }
+  ],
+  "orderCards": [
+    {
+      "title": "1. Pilih produk",
+      "text": "Pilih nama produk, variasi, ukuran, dan harga yang diinginkan."
+    },
+    {
+      "title": "2. Masuk keranjang",
+      "text": "Semua item otomatis dihitung, jadi customer bisa lihat total secara jelas."
+    },
+    {
+      "title": "3. Checkout WhatsApp",
+      "text": "Pesanan tersusun rapi lalu langsung dikirim ke admin lewat WhatsApp."
+    }
+  ]
+}

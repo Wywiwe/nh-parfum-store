@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "id": "royal-ice",
+      "published": true,
+      "name": "Royal Ice",
+      "sku": "NH-RI",
+      "category": "Fresh",
+      "badge": "Best Seller",
+      "notes": "Fresh · Floral · Musky",
+      "desc": "Fresh clean, soft floral, dan musky halus. Cocok buat harian yang rapi.",
+      "toneA": "#91d1d5",
+      "toneB": "#184850",
+      "images": [],
+      "variations": [
+        {
+          "name": "Standar",
+          "options": [
+            { "label": "15ml", "price": 15000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-STD-15" },
+            { "label": "20ml", "price": 20000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-STD-20" },
+            { "label": "30ml", "price": 25000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-STD-30" }
+          ]
+        },
+        {
+          "name": "Best",
+          "options": [
+            { "label": "15ml", "price": 20000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-BST-15" },
+            { "label": "20ml", "price": 27000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-BST-20" },
+            { "label": "30ml", "price": 35000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-BST-30" }
+          ]
+        },
+        {
+          "name": "Premium",
+          "options": [
+            { "label": "15ml", "price": 30000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-PRM-15" },
+            { "label": "20ml", "price": 40000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-PRM-20" },
+            { "label": "30ml", "price": 50000, "oldPrice": 0, "stock": "Ready", "sku": "NH-RI-PRM-30" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clouds",
+      "published": true,
+      "name": "Clouds",
+      "sku": "NH-CLD",
+      "category": "Sweet Creamy",
+      "badge": "Soft Sweet",
+      "notes": "Fruity · Sweet · Creamy",
+      "desc": "Manis lembut, creamy, dan enak dipakai buat yang suka aroma playful tapi tetap clean.",
+      "toneA": "#edc6d7",
+      "toneB": "#7f4460",
+      "images": [],
+      "variations": [
+        {
+          "name": "Standar",
+          "options": [
+            { "label": "15ml", "price": 15000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-STD-15" },
+            { "label": "20ml", "price": 20000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-STD-20" },
+            { "label": "30ml", "price": 25000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-STD-30" }
+          ]
+        },
+        {
+          "name": "Best",
+          "options": [
+            { "label": "15ml", "price": 20000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-BST-15" },
+            { "label": "20ml", "price": 27000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-BST-20" },
+            { "label": "30ml", "price": 35000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-BST-30" }
+          ]
+        },
+        {
+          "name": "Premium",
+          "options": [
+            { "label": "15ml", "price": 30000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-PRM-15" },
+            { "label": "20ml", "price": 40000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-PRM-20" },
+            { "label": "30ml", "price": 50000, "oldPrice": 0, "stock": "Ready", "sku": "NH-CLD-PRM-30" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "published": true,
+      "name": "Yellow",
+      "sku": "NH-YLW",
+      "category": "Fruity Fresh",
+      "badge": "Bright",
+      "notes": "Fruity · Fresh · Airy",
+      "desc": "Aroma fruity cerah, ringan, dan fresh. Cocok buat siang hari dan aktivitas outdoor.",
+      "toneA": "#f2cf7c",
+      "toneB": "#9c5d11",
+      "images": [],
+      "variations": [
+        {
+          "name": "Standar",
+          "options": [
+            { "label": "15ml", "price": 15000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-STD-15" },
+            { "label": "20ml", "price": 20000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-STD-20" },
+            { "label": "30ml", "price": 25000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-STD-30" }
+          ]
+        },
+        {
+          "name": "Best",
+          "options": [
+            { "label": "15ml", "price": 20000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-BST-15" },
+            { "label": "20ml", "price": 27000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-BST-20" },
+            { "label": "30ml", "price": 35000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-BST-30" }
+          ]
+        },
+        {
+          "name": "Premium",
+          "options": [
+            { "label": "15ml", "price": 30000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-PRM-15" },
+            { "label": "20ml", "price": 40000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-PRM-20" },
+            { "label": "30ml", "price": 50000, "oldPrice": 0, "stock": "Ready", "sku": "NH-YLW-PRM-30" }
+          ]
+        }
+      ]
+    }
+  ]
+}
